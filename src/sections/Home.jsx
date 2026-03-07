@@ -2,6 +2,11 @@ import { Typography, Button, Stack } from "@mui/material";
 import SectionWrapper from "../components/SectionWrapper";
 
 export default function Home() {
+  const RESUME_URL = "/kian-tubalinal-resume-01092026.pdf";
+  const scrollTo = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <SectionWrapper id="home">
       <Typography variant="h3">Hi, I'm Kian</Typography>
@@ -16,9 +21,13 @@ export default function Home() {
       </Typography>
 
       <Stack direction="row" spacing={2} justifyContent="center" marginTop={3}>
-        <Button variant="contained">View Projects</Button>
+        <Button variant="outlined" onClick={() => scrollTo("projects")}>
+          View Projects
+        </Button>
 
-        <Button variant="outlined">Contact Me</Button>
+        <Button variant="outlined" href={RESUME_URL} target="_blank">
+          Download Resume
+        </Button>
       </Stack>
     </SectionWrapper>
   );

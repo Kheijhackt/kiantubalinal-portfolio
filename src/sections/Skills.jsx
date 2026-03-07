@@ -35,6 +35,7 @@ export default function Skills() {
         "Mobile App Development",
         "Game Development",
         "Basic System Design",
+        "Object-Oriented Programming",
         "Debugging & Bug Fixing",
       ],
     },
