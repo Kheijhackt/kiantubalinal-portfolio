@@ -4,10 +4,40 @@ import SkillsCard from "../components/SkillsCard";
 
 export default function Skills() {
   const skillsData = [
-    { title: "Programming", skills: ["JavaScript", "Python"] },
-    { title: "Frameworks", skills: ["React Native", "Django"] },
-    { title: "Tools", skills: ["Git", "GitHub"] },
-    { title: "Concepts", skills: ["REST APIs", "Authentication"] },
+    {
+      title: "Programming",
+      skills: ["JavaScript", "Python", "C#", "Lua", "Java"],
+    },
+    {
+      title: "Frameworks",
+      skills: [
+        "React Native",
+        "React",
+        "Django",
+        "Spring Boot (basic exposure)",
+      ],
+    },
+    {
+      title: "Tools",
+      skills: [
+        "Git",
+        "Vercel",
+        "PythonAnywhere",
+        "Roblox Studio",
+        "Unity Editor",
+      ],
+    },
+    {
+      title: "Concepts",
+      skills: [
+        "REST APIs",
+        "Full-Stack Development",
+        "Mobile App Development",
+        "Game Development",
+        "Basic System Design",
+        "Debugging & Bug Fixing",
+      ],
+    },
   ];
 
   return (

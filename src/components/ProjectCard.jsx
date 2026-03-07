@@ -3,6 +3,7 @@ import { Card, CardContent, Typography, Box, Button } from "@mui/material";
 export default function ProjectCard({
   title,
   description,
+  bullets, // added bullets prop
   technologies,
   ctaText,
   ctaUrl,
@@ -10,7 +11,7 @@ export default function ProjectCard({
   return (
     <Card
       sx={{
-        width: "100%", // full horizontal space
+        width: "100%",
         bgcolor: "#1c2942",
         color: "#e0e6f0",
         mb: 3,
@@ -19,8 +20,8 @@ export default function ProjectCard({
         overflow: "hidden",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-between", // push button to bottom
-        minHeight: "150px", // minimum height for layout
+        justifyContent: "space-between",
+        minHeight: "150px",
         position: "relative",
         p: 2,
       }}
@@ -37,6 +38,19 @@ export default function ProjectCard({
           <Typography variant="body1" sx={{ color: "#e0e6f0", mb: 1 }}>
             {description}
           </Typography>
+        )}
+
+        {/* Render bullets if provided */}
+        {bullets && bullets.length > 0 && (
+          <Box component="ul" sx={{ mb: 1, pl: 3 }}>
+            {bullets.map((bullet, i) => (
+              <li key={i}>
+                <Typography variant="body2" sx={{ color: "#e0e6f0" }}>
+                  {bullet}
+                </Typography>
+              </li>
+            ))}
+          </Box>
         )}
 
         {technologies && (

@@ -11,7 +11,8 @@ export default function Home() {
       </Typography>
 
       <Typography className="center">
-        I build mobile apps, backend APIs, and tools that solve real problems.
+        I build mobile apps, web applications, and small games while exploring
+        backend systems and software design.
       </Typography>
 
       <Stack direction="row" spacing={2} justifyContent="center" marginTop={3}>
