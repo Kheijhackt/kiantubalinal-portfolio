@@ -13,8 +13,8 @@ function App() {
       <div style={{ marginTop: "80px" }}>
         <Home />
         <About />
-        <Projects />
         <Skills />
+        <Projects />
         <Contact />
       </div>
     </>

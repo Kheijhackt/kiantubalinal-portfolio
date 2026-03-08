@@ -15,7 +15,7 @@ import { useTheme } from "@mui/material/styles";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const sections = ["home", "about", "projects", "skills", "contact"];
+  const sections = ["home", "about", "skills", "projects", "contact"];
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md")); // mobile if width <= md
