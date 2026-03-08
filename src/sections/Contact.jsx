@@ -65,6 +65,8 @@ export default function Contact() {
           flexDirection: { xs: "column", md: "row" },
           width: "100%",
           gap: 6,
+          maxWidth: "1200px",
+          margin: "auto",
         }}
       >
         {/* LEFT COLUMN */}
@@ -75,8 +77,17 @@ export default function Contact() {
             flexDirection: "column",
             gap: 2,
             justifyContent: "flex-start",
+            backgroundColor: "#1c2942",
+            p: 4,
+            borderRadius: 2,
+            boxShadow: "0 10px 30px rgba(0,0,0,0.4)",
+            height: "fit-content",
           }}
         >
+          <Typography variant="h6" sx={{ color: "#7fb3ff", mb: 1 }}>
+            Get in Touch
+          </Typography>
+
           <Typography sx={{ color: "#e0e6f0" }}>
             <strong>Email:</strong> kheijhackt@gmail.com
           </Typography>
@@ -85,24 +96,31 @@ export default function Contact() {
             <strong>Location:</strong> Metro Manila, Philippines
           </Typography>
 
-          {/* Social Icons */}
-          <Box sx={{ display: "flex", gap: 2 }}>
+          <Box sx={{ display: "flex", gap: 2, mt: 1 }}>
             <IconButton
               component="a"
               href="https://github.com/Kheijhackt"
               target="_blank"
-              sx={{ color: "#7fb3ff" }}
+              sx={{
+                color: "#7fb3ff",
+                backgroundColor: "#2a3a5a",
+                "&:hover": { backgroundColor: "#3a4d75" },
+              }}
             >
-              <GitHubIcon fontSize="large" />
+              <GitHubIcon />
             </IconButton>
 
             <IconButton
               component="a"
               href="https://www.linkedin.com/in/kian-jacob-anthony-t-823696204/"
               target="_blank"
-              sx={{ color: "#7fb3ff" }}
+              sx={{
+                color: "#7fb3ff",
+                backgroundColor: "#2a3a5a",
+                "&:hover": { backgroundColor: "#3a4d75" },
+              }}
             >
-              <LinkedInIcon fontSize="large" />
+              <LinkedInIcon />
             </IconButton>
           </Box>
         </Box>
