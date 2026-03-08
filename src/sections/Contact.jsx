@@ -182,7 +182,9 @@ export default function Contact() {
           </Button>
 
           {status && (
-            <Typography sx={{ mt: 1, color: "#e0e6f0" }}>{status}</Typography>
+            <Typography sx={{ mt: 1, color: "#e0e6f0", textAlign: "center" }}>
+              {status}
+            </Typography>
           )}
         </Stack>
       </Box>
