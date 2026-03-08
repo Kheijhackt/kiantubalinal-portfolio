@@ -11,7 +11,7 @@ export default function ProjectCard({
   return (
     <Card
       sx={{
-        width: "100%",
+        width: "90%",
         bgcolor: "#1c2942",
         color: "#e0e6f0",
         mb: 3,

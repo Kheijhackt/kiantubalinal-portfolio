@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 import SectionWrapper from "../components/SectionWrapper";
 import SkillsCard from "../components/SkillsCard";
 
@@ -43,20 +43,25 @@ export default function Skills() {
 
   return (
     <SectionWrapper id="skills">
-      {/* Section Title */}
       <Typography variant="h4" sx={{ mb: 3 }}>
         Skills
       </Typography>
 
-      {/* Section Intro */}
       <Typography sx={{ mb: 2 }}>
         Here are my main technical skills, organized by category.
       </Typography>
 
-      {/* Skills Cards */}
-      {skillsData.map((item, index) => (
-        <SkillsCard key={index} title={item.title} skills={item.skills} />
-      ))}
+      {/* Width limiter */}
+      <Box
+        sx={{
+          width: "90%",
+          margin: "0 0",
+        }}
+      >
+        {skillsData.map((item, index) => (
+          <SkillsCard key={index} title={item.title} skills={item.skills} />
+        ))}
+      </Box>
     </SectionWrapper>
   );
 }
