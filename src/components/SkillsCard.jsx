@@ -4,7 +4,7 @@ export default function SkillsCard({ title, skills }) {
   return (
     <Card
       sx={{
-        width: "100%", // full horizontal space
+        width: "90%", // full horizontal space
         bgcolor: "#1c2942",
         color: "#e0e6f0",
         mb: 3,

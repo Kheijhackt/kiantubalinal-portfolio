@@ -52,16 +52,9 @@ export default function Skills() {
       </Typography>
 
       {/* Width limiter */}
-      <Box
-        sx={{
-          width: "90%",
-          margin: "0 0",
-        }}
-      >
-        {skillsData.map((item, index) => (
-          <SkillsCard key={index} title={item.title} skills={item.skills} />
-        ))}
-      </Box>
+      {skillsData.map((item, index) => (
+        <SkillsCard key={index} title={item.title} skills={item.skills} />
+      ))}
     </SectionWrapper>
   );
 }

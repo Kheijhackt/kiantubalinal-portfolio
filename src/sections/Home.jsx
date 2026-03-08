@@ -21,7 +21,11 @@ export default function Home() {
       </Typography>
 
       <Stack direction="row" spacing={2} justifyContent="center" marginTop={3}>
-        <Button variant="outlined" onClick={() => scrollTo("projects")}>
+        <Button
+          variant="outlined"
+          style={{ padding: 15 }}
+          onClick={() => scrollTo("projects")}
+        >
           View Projects
         </Button>
 
