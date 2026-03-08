@@ -5,11 +5,11 @@ import SkillsCard from "../components/SkillsCard";
 export default function Skills() {
   const skillsData = [
     {
-      title: "Programming",
-      skills: ["JavaScript", "Python", "C#", "Lua", "Java"],
+      title: "Programming Languages",
+      skills: ["JavaScript", "Python", "C#", "C++", "Lua", "Java"],
     },
     {
-      title: "Frameworks",
+      title: "Frameworks & Libraries",
       skills: [
         "React Native",
         "React",
@@ -18,7 +18,7 @@ export default function Skills() {
       ],
     },
     {
-      title: "Tools",
+      title: "Development Tools & Platforms",
       skills: [
         "Git",
         "Vercel",
@@ -28,7 +28,7 @@ export default function Skills() {
       ],
     },
     {
-      title: "Concepts",
+      title: "Software Development Concepts",
       skills: [
         "REST APIs",
         "Full-Stack Development",
@@ -48,7 +48,7 @@ export default function Skills() {
       </Typography>
 
       <Typography sx={{ mb: 2 }}>
-        Here are my main technical skills, organized by category.
+        Here are the technologies, tools, and development concepts I work with.
       </Typography>
 
       {/* Width limiter */}

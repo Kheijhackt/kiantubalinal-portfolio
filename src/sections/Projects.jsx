@@ -7,7 +7,7 @@ export default function Projects() {
     {
       title: "Acoustic-Based Rice Weevil Detection Mobile App | Project Design",
       description:
-        "A mobile app to remotely monitor and control an acoustic-based rice weevil detection system. This is submitted as the final project of the Computer Engineering program.",
+        "A mobile app to remotely monitor and control an acoustic-based rice weevil detection system. This is submitted as part of the final project of the Computer Engineering program.",
       bullets: [
         "Built mobile monitoring interface with React Native",
         "Enabled remote activation of the pest elimination process",
@@ -25,7 +25,7 @@ export default function Projects() {
       bullets: [
         "Built full mobile interface using React Native",
         "Implemented CRUD operations for managing repertoire list",
-        "Integrated with Django backend hosted on PythonAnywhere",
+        "Integrated with Django backend for backup cloud storage",
         "Deployed to Google Play Store for public access",
       ],
       technologies: ["React Native", "Django", "REST API", "Deployment"],
