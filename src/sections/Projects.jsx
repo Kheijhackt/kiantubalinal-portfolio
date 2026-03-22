@@ -5,18 +5,29 @@ import ProjectCard from "../components/ProjectCard";
 export default function Projects() {
   const projectList = [
     {
-      title: "Acoustic-Based Rice Weevil Detection Mobile App | Project Design",
+      title: "Blunder Bank | Chess Improvement Web App",
       description:
-        "A mobile app to remotely monitor and control an acoustic-based rice weevil detection system. This is submitted as part of the final project of the Computer Engineering program.",
+        "A full-stack web app designed to help chess players systematically track, analyze, and eliminate their recurring mistakes using spaced repetition.",
       bullets: [
-        "Built mobile monitoring interface with React Native",
-        "Enabled remote activation of the pest elimination process",
-        "Integrated with Django backend API",
-        "Part of a larger embedded IoT system",
+        "Developed a personal blunder tracking system with manual input for deeper learning",
+        "Implemented spaced repetition to reinforce mistake correction over time",
+        "Built a full-stack app using Laravel + React via Inertia.js",
+        "Designed interactive UI for notation training and contextual analysis",
+        "Integrated PostgreSQL database hosted on Supabase",
       ],
-      technologies: ["React Native", "Django", "REST API", "IoT System"],
-      ctaText: "View in Github",
-      ctaUrl: "https://github.com/Clipph/pd2_mobapp",
+      technologies: [
+        "Laravel",
+        "React",
+        "Inertia.js",
+        "Blade",
+        "PostgreSQL",
+        "Supabase",
+        "REST API",
+      ],
+      ctaText: "Visit Web App",
+      ctaUrl: "https://blunder-bank.free.laravel.cloud/",
+      ctaText2: "View in Github",
+      ctaUrl2: "https://github.com/Kheijhackt/blunder-bank",
     },
     {
       title: "Repertoire Tracker | Available in Google Play Store",
@@ -32,25 +43,8 @@ export default function Projects() {
       ctaText: "View in Google Play",
       ctaUrl:
         "https://play.google.com/store/apps/details?id=com.bananaillukit.Repertoire_Tracker&hl=en",
-    },
-    {
-      title: "Duet Pass | Game Made with Unity",
-      description:
-        "A small game developed in Unity using C#, focusing on basic gameplay mechanics and object-oriented programming principles. Playable directly in the browser via itch.io.",
-      bullets: [
-        "Implemented core gameplay mechanics using C#",
-        "Applied object-oriented programming concepts to structure the game",
-        "Learned the basics of game loop, input handling, and Unity engine workflow",
-        "Published as a browser-playable project on itch.io to practice game development fundamentals",
-      ],
-      technologies: [
-        "Unity",
-        "C#",
-        "Game Development",
-        "Object-Oriented Programming",
-      ],
-      ctaText: "Play on itch.io",
-      ctaUrl: "https://unblaital.itch.io/duet-pass",
+      ctaText2: "View in Github",
+      ctaUrl2: "https://github.com/Clipph/RepertoireTracker",
     },
     {
       title: "Tonicist Association | Community Website",
@@ -70,7 +64,44 @@ export default function Projects() {
       ],
       ctaText: "Visit Website",
       ctaUrl: "https://tonicist-association.vercel.app/",
+      ctaText2: "View in Github",
+      ctaUrl2: "https://github.com/Kheijhackt/tonicist-association",
     },
+    {
+      title: "Acoustic-Based Rice Weevil Detection Mobile App | Project Design",
+      description:
+        "A mobile app to remotely monitor and control an acoustic-based rice weevil detection system. This is submitted as part of the final project of the Computer Engineering program.",
+      bullets: [
+        "Built mobile monitoring interface with React Native",
+        "Enabled remote activation of the pest elimination process",
+        "Integrated with Django backend API",
+        "Part of a larger embedded IoT system",
+      ],
+      technologies: ["React Native", "Django", "REST API", "IoT System"],
+      ctaText: "View in Github",
+      ctaUrl: "https://github.com/Clipph/pd2_mobapp",
+    },
+
+    {
+      title: "Duet Pass | Game Made with Unity",
+      description:
+        "A small game developed in Unity using C#, focusing on basic gameplay mechanics and object-oriented programming principles. Playable directly in the browser via itch.io.",
+      bullets: [
+        "Implemented core gameplay mechanics using C#",
+        "Applied object-oriented programming concepts to structure the game",
+        "Learned the basics of game loop, input handling, and Unity engine workflow",
+        "Published as a browser-playable project on itch.io to practice game development fundamentals",
+      ],
+      technologies: [
+        "Unity",
+        "C#",
+        "Game Development",
+        "Object-Oriented Programming",
+      ],
+      ctaText: "Play on itch.io",
+      ctaUrl: "https://unblaital.itch.io/duet-pass",
+    },
+
     {
       title: "Flex Your Art | Roblox Game",
       description:
@@ -115,6 +146,8 @@ export default function Projects() {
           technologies={proj.technologies}
           ctaText={proj.ctaText}
           ctaUrl={proj.ctaUrl}
+          ctaText2={proj.ctaText2}
+          ctaUrl2={proj.ctaUrl2}
         />
       ))}
     </SectionWrapper>

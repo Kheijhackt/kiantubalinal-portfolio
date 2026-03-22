@@ -9,17 +9,14 @@ export default function Home() {
 
   return (
     <SectionWrapper id="home">
-      <Typography variant="h3">Hi, I'm Kian</Typography>
-
+      <Typography variant="h3">Hi, I'm Kian (Calify)</Typography>
       <Typography variant="h5">
         Computer Engineer | Software Developer
       </Typography>
-
       <Typography className="center">
         I build mobile apps, web applications, and small games while exploring
         backend systems and software design.
       </Typography>
-
       <Stack direction="row" spacing={2} justifyContent="center" marginTop={3}>
         <Button
           variant="outlined"

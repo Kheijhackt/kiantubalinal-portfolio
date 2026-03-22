@@ -7,6 +7,8 @@ export default function ProjectCard({
   technologies,
   ctaText,
   ctaUrl,
+  ctaText2,
+  ctaUrl2,
 }) {
   return (
     <Card
@@ -75,30 +77,57 @@ export default function ProjectCard({
         )}
       </Box>
 
-      {/* CTA button bottom-right */}
-      {ctaText && ctaUrl && (
-        <Box sx={{ display: "flex", justifyContent: "flex-end", mt: 2 }}>
-          <Button
-            component="a"
-            href={ctaUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="contained"
-            sx={{
-              backgroundColor: "#7fb3ff",
-              color: "#ffffff",
-              fontSize: "0.9rem",
-              px: 3,
-              py: 1,
-              "&:hover": {
-                backgroundColor: "#5a9cff",
-              },
-            }}
-          >
-            {ctaText}
-          </Button>
+      {/* CTA buttons bottom-right */}
+      {(ctaText && ctaUrl) || (ctaText2 && ctaUrl2) ? (
+        <Box
+          sx={{ display: "flex", justifyContent: "flex-end", mt: 2, gap: 1 }}
+        >
+          {ctaText && ctaUrl && (
+            <Button
+              component="a"
+              href={ctaUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="contained"
+              sx={{
+                backgroundColor: "#7fb3ff",
+                color: "#ffffff",
+                fontSize: "0.9rem",
+                px: 3,
+                py: 1,
+                "&:hover": {
+                  backgroundColor: "#5a9cff",
+                },
+              }}
+            >
+              {ctaText}
+            </Button>
+          )}
+
+          {ctaText2 && ctaUrl2 && (
+            <Button
+              component="a"
+              href={ctaUrl2}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="outlined"
+              sx={{
+                borderColor: "#7fb3ff",
+                color: "#7fb3ff",
+                fontSize: "0.9rem",
+                px: 3,
+                py: 1,
+                "&:hover": {
+                  borderColor: "#5a9cff",
+                  color: "#5a9cff",
+                },
+              }}
+            >
+              {ctaText2}
+            </Button>
+          )}
         </Box>
-      )}
+      ) : null}
     </Card>
   );
 }

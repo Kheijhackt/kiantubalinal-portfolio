@@ -6,7 +6,7 @@ export default function Skills() {
   const skillsData = [
     {
       title: "Programming Languages",
-      skills: ["JavaScript", "Python", "C#", "C++", "Lua", "Java"],
+      skills: ["JavaScript", "Python", "C#", "C++", "Lua", "Java", "PHP"],
     },
     {
       title: "Frameworks & Libraries",
@@ -15,6 +15,7 @@ export default function Skills() {
         "React",
         "Django",
         "Spring Boot (basic exposure)",
+        "Laravel (basic exposure)",
       ],
     },
     {
@@ -25,12 +26,15 @@ export default function Skills() {
         "PythonAnywhere",
         "Roblox Studio",
         "Unity Editor",
+        "Cloud Laravel Deployment",
+        "Supabase",
       ],
     },
     {
       title: "Software Development Concepts",
       skills: [
         "REST APIs",
+        "MVC Architecture",
         "Full-Stack Development",
         "Mobile App Development",
         "Game Development",
