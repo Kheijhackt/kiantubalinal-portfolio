@@ -2,7 +2,7 @@ import { Typography, Button, Stack } from "@mui/material";
 import SectionWrapper from "../components/SectionWrapper";
 
 export default function Home() {
-  const RESUME_URL = "/kian-tubalinal-resume-03102026.pdf";
+  const RESUME_URL = "/kian-tubalinal-resume-03282026.pdf";
   const scrollTo = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   };
